@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pensionera - Hållbarhetsfrågor</title>
+</head>
+<body>
+    <div class="container header-container">
+        <h1>Hållbarhetsfrågor i rådgivning</h1>
+        Uppdaterad 2022-09-21
+        <ol>
+            <li>Utför rådgivningen som vanligt genom att inhämta information om kundens situation och gör en lämplighetsbedömning.</li>
+            <li>Presentera som vanligt vilka fonder/portföljer som är lämpliga för kunden baserat på lämplighetsbedömningen.</li>
+            <li>Nu ska kunden tillfrågas om sina hållbarhetspreferenser för att se om fonderna/portföljerna behöver justeras.
+            Först behöver du informera kunden vad hållbara investeringar innebär:</li>
+        </ol>
+    </div>
+
+    <div class="container">
+        <div>
+            <p>Det finns två olika regelverk som styr hur finansiella institut ska arbeta med hållbarhet.</p>
+        </div>
+        <div>
+            <p>Först har vi EU-taxonomin som hjälper investerare att identifiera och jämföra miljömässigt hållbara investeringar. Taxonomin är ett verktyg för att nå EU:s klimatmål och målsättningar inom EU:s gröna tillväxtstrategi*.</p>
+        </div>
+        <div>
+            <p>Sedan har vi Disclosure-förordningen som tvingar fondbolagen att redovisa påverkan av både miljömässig- och social hållbarhet. Här delas fonderna upp i tre kategorier:</p>
+        </div>
+        <div>
+            <ul>
+                <li>Mörkgröna fonder har hållbarhet som mål. Dessa fondinnehav ska göra en positiv inverkan på miljö och samhälle, och samtidigt inte skada något annat hållbarhetsmål.</li>
+                <li>Ljusgröna fonder ska främja hållbarhet. Det är en bred kategori som innehåller allt från fonder som exkluderar vissa sektorer till fonder som tar stor hänsyn till hållbarhetsfrågor i sina investeringsbeslut. Här befinner sig de flesta fonderna med hållbarhetsinriktning.</li>
+                <li>Om en fond varken är ljusgrön eller mörkgrön så innebär det att den inte beaktar någon, eller bara grundläggande hänsyn till hållbarhetsfrågor.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container nummer-fyra">
+        <p>4. Påbörja därefter frågorna om hållbarhet. Påverka inte kunden. Förklara igen om kunden inte förstår.</p>
+    </div>
+
+    <div class="container hallbarhetspreferenser">
+        <h2>Har du några hållbarhetspreferenser när det kommer till dina investeringar?</h2>
+
+        <form action="/action_page.php" method="get">
+            <div>
+                <label for="Ja"></label>
+                <input type="radio" id="ja" name="ja">Ja<br><br>
+            </div>
+            <div>
+                <label for="Nej"></label>
+                <input type="radio" id="nej" name="nej">Nej<br><br>
+            </div>
+            <div class="varning-hallbarhet">
+                <p>Tänk på att det kan bidra till en negativ hållbarhetsutveckling som också kan påverka avkastningen.</p>
+            </div>
+        </form>
+
+    </div>
+
+    <div class="container text-area-container">
+        <div class="heading-button-container">
+            <div>
+                <h3>Text att klistra in i rådgivningsdokumentationen:</h3>
+            </div>
+            <div>
+                <button>Kopiera text</button>
+            </div>
+        </div>
+        <textarea name="" id="textarea" cols="30" rows="10" 
+        placeholder="Information om hållbarhet vid investeringar
+        ---------------------------------------------------------------
+        Det finns två olika regelverk som styr hur finansiella institut ska arbeta med hållbarhet.
+        
+        1. EU-taxonomin hjälper investerare att identifiera och jämföra miljömässigt hållbara investeringar. Taxonomin är ett verktyg för att nå EU:s klimatmål och målsättningar inom EU:s gröna tillväxtstrategi
+        
+        2. Disclosure-förordningen, Sustainable Financial Disclosure Regulation (SFDR), tvingar fondbolagen att redovisa påverkan av både miljömässig- och social hållbarhet. Här delas fonderna upp i tre kategorier:
+        - Mörkgröna fonder har hållbarhet som mål (även kallade artikel 9-fonder). Dessa fondinnehav ska göra en positiv inverkan på miljö och samhälle, och samtidigt inte skada något annat hållbarhetsmål.
+        - Ljusgröna fonder ska främja hållbarhet (även kallade artikel 8-fonder). Det är en bred kategori som innehåller allt från fonder som exkluderar vissa sektorer till fonder som tar stor hänsyn till hållbarhetsfrågor i sina investeringsbeslut. Här befinner sig de flesta fonderna med hållbarhetsinriktning.
+        - Om en fond varken är ljusgrön eller mörkgrön så innebär det att den inte beaktar någon, eller bara grundläggande hänsyn till hållbarhetsfrågor (även kallade artikel 6-fonder).
+        
+        Fonderna kan även redovisa vilka sektorer som de undviker för att undvika huvudsaklig negativ påverkan på miljö eller samhälle. Det kan exempelvis handla om tobak, alkohol eller vapenindustri.
+        
+        
+        Kundens svar på hållbarhetsfrågor
+        ---------------------------------------------------------------
+        
+        
+        Rådgivarens bedömning
+        ---------------------------------------------------------------"></textarea>
+    </div>
+
+    <div class="ja-hallbarhet" hidden>
+        <div class="container krav-hallbarhet">
+            <h2>Vilken nivå av hållbarhet ställer du som krav på dina investeringar?</h2>
+            <form>
+                <div>
+                  <input type="radio" id="option1" name="options" value="option1">
+                  <label for="option1"><span style="background-color: #006600;">Mörkgrön</span> - Har hållbarhet som mål (Artikel 9 i SFDR)</label>
+                </div>
+                <div>
+                  <input type="radio" id="option2" name="options" value="option2">
+                  <label for="option2"><span style="background-color: #006600;">Ljusgrön</span> - Främja hållbarhet (Artikel 8 i SFDR)</label>
+                </div>
+                <div>
+                  <input type="radio" id="option3" name="options" value="option3">
+                  <label for="option3"><span style="background-color: #cbcbcb">Inget av ovan</span> - Hållbarhetsneutral (Artikel 6 i SFDR)</label>
+                </div>
+                <div>
+                  <input type="radio" id="option4" name="options" value="option4">
+                  <label for="option4">Jag vet inte</label>
+                </div>
+              </form>
+        </div>
+
+        <div class="fler-hallbarhetspreferenser">
+            Markera fler hållbarhetspreferenser <span style="text-decoration: underline;">om</span> kunden uttrycker sådana önskemål:
+        </div>
+
+        <div class="container utesluta-sektorer">
+            <div class="sektorer-rubrik">
+                <h2>Utesluta specifika ifrågasatta sektorer som riskerar leda till en huvudsaklig negativ påverkan på miljö eller samhälle</h2>
+            </div>
+            <div class="info-box">
+                <p>Om fonden investerat i någon av nedan angivna sektorer men investeringen understiger 5 % av fondens omsättning 
+                kommer fonden ändå bedömas såsom lämplig.<br> Du kan välja flera val.</p>      
+            </div>
+            <div>
+                <form id="form-utesluta">
+                    <label>
+                      <input type="checkbox" name="option" value="vapen" style="margin-bottom: 5px;"> Vapen och/eller krigsmateriel
+                    </label><br>
+                    <label>
+                      <input type="checkbox" name="option" value="karnvapen" style="margin-bottom: 5px;"> Kärnvapen
+                    </label><br>
+                    <label>
+                      <input type="checkbox" name="option" value="kemiska_biologiska_vapen" style="margin-bottom: 5px;"> Kemiska och biologiska vapen
+                    </label><br>
+                    <label>
+                      <input type="checkbox" name="option" value="klusterbomber_personminor" style="margin-bottom: 5px;"> Klusterbomber, personminor
+                    </label><br>
+                    <label>
+                      <input type="checkbox" name="option" value="tobak" style="margin-bottom: 5px;"> Tobak
+                    </label><br>
+                    <label>
+                      <input type="checkbox" name="option" value="pornografi" style="margin-bottom: 5px;"> Pornografi
+                    </label><br>
+                    <label>
+                      <input type="checkbox" name="option" value="alkohol" style="margin-bottom: 5px;"> Alkohol
+                    </label><br>
+                    <label>
+                      <input type="checkbox" name="option" value="kommersiell_spelverksamhet" style="margin-bottom: 5px;"> Kommersiell spelverksamhet
+                    </label><br>
+                    <label>
+                      <input type="checkbox" name="option" value="fossila_branslen" style="margin-bottom: 5px;"> Fossila bränslen (olja, gas, kol)
+                    </label><br>
+                    <label>
+                      <input type="checkbox" name="option" value="kol" style="margin-bottom: 5px;"> Kol
+                    </label><br>
+                    <label>
+                      <input type="checkbox" name="option" value="uran" style="margin-bottom: 5px;"> Uran
+                    </label><br>
+                    <label>
+                      <input type="checkbox" name="option" value="gmo" style="margin-bottom: 5px;"> Genetiskt modifierade organismer (GMO)
+                    </label><br>
+                  </form>
+            </div>
+        </div>
+      
+      <div class="container specificering">
+        <div>
+          <h2>Specificering över hållbarhetsaspekter som ska beaktas</h2>
+        </div>
+        <div>
+          <form id="form-utesluta">
+            <label>
+              <input type="checkbox" name="option" value="vapen" style="margin-bottom: 5px;"> Miljöaspekter (t ex bolagens inverkan på miljö och klimat)
+            </label><br>
+            <label>
+              <input type="checkbox" name="option" value="karnvapen" style="margin-bottom: 5px;"> Sociala aspekter (t ex mänskliga rättigheter, arbetstagarrättigheter och likabehandling)
+            </label><br>
+            <label>
+              <input type="checkbox" name="option" value="kemiska_biologiska_vapen" style="margin-bottom: 5px;"> Bolagsstyrningsaspekter (t ex aktieägares rättigheter, frågor om ersättningar till ledande befattningshavare och motverkande av korruption)
+            </label>
+          </form>
+        </div>
+        <div>
+          <h2>Blandade hållbarhetspreferenser</h2>
+        </div>
+        <div>
+          <label>
+            <input type="checkbox" name="option" value="vapen" style="margin-bottom: 5px;"> Fonden ska ha en landsspecifik hållbarhetsanalys
+          </label><br>
+          <p class="p-specificering">Detta alternativ avser fonder som gör en landsspecifik hållbarhetsanalys som resulterar i att bolag involverade i vissa länder exkluderas eller att räntebärande värdepapper utgivna av vissa stater exkluderas.</p>
+          <label>
+            <input type="checkbox" name="option" value="karnvapen" style="margin-bottom: 5px;"> Fonden ska utesluta investeringar med exponering mot Ryssland (eller annat specifikt land)<br>
+          </label>
+          <p class="p-specificering">Denna fråga skiljer sig mot ovan och stäms inte av mot Hållbarhetsprofilen.<br>
+          Denna fråga handlar om fonden idag investerar mot Ryssland till skillnad ifrån från ovan som handlar om det finns en<br> hållbarhetspolicy som förhindrar fonden att investera mot Ryssland.<br>
+          Denna avstämning görs mot Avanza för de fonder där den datan finns.<br>
+          </p>
+        </form>  
+        </div>
+      </div>
+
+      <div class="container jamfor-box">
+        <button>Jämför kundsvar ned fonddata från Hållbarhetsprofilen</button>
+      </div>
+
+      <div class="container text-area-container">
+          <div class="heading-button-container">
+              <div>
+                  <h3>Text att klistra in i rådgivningsdokumentationen:</h3>
+              </div>
+              <div>
+                  <button>Kopiera text</button>
+              </div>
+          </div>
+          <textarea name="" id="textarea" cols="30" rows="10" 
+          placeholder=""></textarea>
+
+      </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
